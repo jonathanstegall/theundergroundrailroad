@@ -1,0 +1,5 @@
+<?php
+function writeSubPages() {
+
+};
+?>

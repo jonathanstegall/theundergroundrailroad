@@ -1,0 +1,759 @@
+/* CSS Document for the Underground Railroad */
+
+body {
+	background-color: #000;
+	color: #c0c0c0;
+	padding: 10px;
+	border: 0;
+	text-align: center;
+	font-size: 80%;
+	font-family: Verdana, Helvetica, Arial, sans-serif;
+}
+/* divs and uls for layout only */
+#all {
+	width: 760px;
+	margin: 0 auto;
+	text-align: left;
+	border: #cccccc 1px ridge;
+	padding: 5px;
+	background-color: #272727;
+	color: inherit;
+}
+#header {
+	width: 760px;
+	height: 165px;
+	margin: 0 auto;
+	background: #000 url(../images/header.jpg) no-repeat;
+}
+#topnavigation {
+	width: 590px;
+	height: 40px;
+	float: right;
+	margin-top: 75px;
+}
+#container {
+	width: 760px;
+	background: url(../images/mainBG.jpg) repeat-y;
+	color: inherit;
+	font-size: 1em;
+}
+#navigation {
+	width: 150px;
+	float: left;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	text-align: right;
+}
+#navigation span {
+	visibility: hidden;
+}
+#navmainsection {
+	background: url(../images/mainheader.jpg) no-repeat top left;
+	width: 150px;
+	height: 25px;
+}
+#navhandbooksection {
+	background: url(../images/handbookheader.jpg) no-repeat top left;
+	width: 150px;
+	height: 25px;
+}
+#content {
+	width: 460px;
+	margin-bottom: 5px;
+	float: left;
+	text-align: left;
+	letter-spacing: 0.05em;
+}
+#subcontent {
+	width: 150px;
+	float: left;
+	padding: 0;
+	margin: 0;
+}
+#subcontentbody {
+	margin: 0 5px;
+}
+#subheader {
+	background: url(../images/ministriesheader.jpg) no-repeat top left;
+	width: 150px;
+	height: 25px;
+	padding: 0;
+	margin: 0;
+}
+#footer {
+	clear: both;
+	background-color: #272727;
+	color: inherit;
+	width: 760px;
+	margin: 0 auto;
+	padding: 5px 0px;
+	text-align: center;
+	font-size: 0.9em;
+}
+#footer ul {
+	list-style: none;
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+#footer li {
+	display: inline;
+	text-align: center;
+	vertical-align: middle;
+	padding: 0 1em;
+	margin: 0;
+	border-left: 1px solid #fff;
+}
+#footer li.first {
+	border: none;
+}
+.ie7link {
+	margin: 10px 0;
+}
+/* end of site layout */
+
+/* special fixes */
+.clearfix:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+/* End hide from IE-mac */
+/* end special fixes */
+
+/* link styles for site */
+a {
+  outline: none !important;
+}
+ul#topnav {
+	list-style: none;
+	margin: 115px 0 0 0;
+	padding: 0;
+	width: 590px;
+	height: 40px;
+	float: right;
+}
+ul#topnav li {
+	padding: 0;
+	margin: 0;
+	float: left;
+	text-indent: -9999px;
+}
+ul#topnav a {
+	display: block;
+	border: 0;
+	background: transparent url(../images/nav.jpg) no-repeat;
+	text-decoration: none;
+}
+ul#topnav #home a {
+	width: 110px;
+	height: 40px;
+}
+ul#topnav #home a:link, ul#topnav #home a:visited {
+	background-position: 0px 0px;
+}
+ul#topnav #home a:hover, ul#topnav #home a:active {
+	background-position: 0px -40px;
+}
+ul#topnav .homeactive { 
+	background-position: 0px -80px; 
+}
+ul#topnav #ministries a {
+	width: 190px;
+	height: 40px;
+}
+ul#topnav #ministries a:link, ul#topnav #ministries a:visited {
+	background-position: -110px 0px;
+}
+ul#topnav #ministries a:hover, ul#topnav #ministries a:active {
+	background-position: -110px -40px;
+}
+ul#topnav #handbook a {
+	width: 290px;
+	height: 40px;
+}
+ul#topnav #handbook a:link, ul#topnav #handbook a:visited {
+	background-position: -300px 0px;
+}
+ul#topnav #handbook a:hover, ul#topnav #handbook a:active {
+	background-position: -300px -40px;
+}
+#nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-top: 15px;
+	width: 150px;
+	height: auto; 
+	background-color: #272727;
+	color: inherit;
+}
+#nav li {
+	float: left;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	width: 150px;
+	height: auto;
+	background-color: #272727;
+	color: inherit;
+}
+#nav li a {
+	text-decoration: none;
+	width: 140px;
+	height: 25px;
+	display: block;
+	padding: 5px 5px 5px 0;
+}
+#nav li ul  {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	position: absolute;
+	top: 0em;
+	left: 150px;
+}
+#nav li ul li {
+	width: 150px;
+	height: 25px;
+	margin: 3px 0;
+}
+#nav li ul a  {
+	text-decoration: none;
+	width: 150px;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	display: block;
+	background-color: #272727;
+	color: inherit;
+}
+#nav li:hover ul, #anav li.over ul{
+	display: block;
+}
+#nav a:link, #nav a:visited {
+	color: #999;
+	background-color: inherit;
+	text-decoration: none;
+}
+#nav a:hover, #nav a:active {
+	color: #000;
+	background-color: #666;
+	font-weight: bold;
+}
+#nav ul li a:link, #nav ul li a:visited {
+	color: #999 !important;
+	background-color: #272727 !important;
+}
+#nav ul li a:hover, #nav ul li a:active {
+	color: #000 !important;
+	background-color: #666 !important;
+	font-weight: bold;
+}
+#navigation li.current a {
+	color: #000;
+	background-color: #666;
+}
+#content a:link {
+	background-color: inherit;
+	color: #999;
+	text-decoration: underline;
+}
+#content a:visited {
+	background-color: inherit;
+	color: #999;
+	text-decoration: underline;
+}
+#content a:hover, a:focus {
+	text-decoration: none;
+	background-color: inherit;
+	color: #fff;
+}
+#content a:active {
+	text-decoration: none;
+	background-color: inherit;
+	color: #fff;
+}
+#subcontent a:link, #subcontent a:visited {
+	background-color: inherit;
+	color: #999;
+	text-decoration: underline;
+}
+#subcontent a:hover, #subcontent a:focus, #subcontent a:active {
+	text-decoration: none;
+	background-color: inherit;
+	color: #fff;
+}
+#footer a:link {
+	text-decoration: underline;
+	color: #999;
+	background-color: inherit;
+}
+#footer a:visited {
+	text-decoration: underline;
+	color: #999;
+	background-color: inherit;
+}
+#footer a:hover, a:focus {
+	text-decoration: none;
+	color: #fff;
+	background-color: inherit;
+}
+#footer a:active {
+	text-decoration: none;
+	color: #fff;
+	background-color: inherit;
+}
+a:link {
+	background-color: inherit;
+	color: #999;
+	text-decoration: underline;
+}
+a:visited {
+	background-color: inherit;
+	color: #999;
+	text-decoration: underline;
+}
+a:hover, a:focus {
+	text-decoration: none;
+	background-color: inherit;
+	color: #fff;
+}
+a:active {
+	text-decoration: none;
+	background-color: inherit;
+	color: #fff;
+}
+/* end of link styles */
+
+/* some html elements */
+#content p {
+	padding: 0 10px;
+}
+p {
+}
+h1 {
+	background-color: inherit;
+	color: #fff;
+	border-bottom: 1px #fff dashed;
+	text-align: left;
+	letter-spacing: 0.15em;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-size: 1.15em;
+	font-weight: normal;
+}
+h2 {
+	background-color: inherit;
+	color: #fff;
+	font-weight: normal;
+	letter-spacing: 0.1em;
+	font-size: 1.1em;
+	padding-top: 5px;
+	padding-bottom: 0;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+h3 {
+	background-color: inherit;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1em;
+	padding-top: 0;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h4 {
+	background-color: inherit;
+	color: #fff;
+	font-size: 0.9em;
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+h5 {
+	padding-top: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+hr {
+	height: .5em;
+}
+ul {
+}
+li {
+	margin-top: 2.5px;
+	margin-bottom: 2.5px;
+}
+dl {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+dt {
+	color: #fff;
+}
+dd {
+
+}
+q:before, q:after {
+    content: "";
+}
+
+blockquote p {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+/* end of html elements */
+
+/* list styles */
+.lowercaseList {
+	list-style-type: lower-alpha;
+}
+.newsList {
+	width: 420px;
+	padding-bottom: 10px;
+	border-bottom: 1px #333 ridge;
+	margin: 10px auto 0 auto;
+}
+.newsList dt {
+	width: 200px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.newsList dd {
+	width: 220px;
+	float: right;
+	margin: 0 0 5px 0;
+	padding: 0;
+}
+.postedby {
+	font-size: 0.75em;
+	color: #fff;
+	background-color: inherit;
+}
+ul.subPagesList {
+	width: 340px;
+	margin: 0 10px 10px 10px;
+	list-style: none;
+	padding-top: 0;
+}
+.subPagesList li {
+	margin: 5px 10px;
+	padding: 0;
+	float: left;
+	width: 150px;
+}
+.subPagesList li a {
+	display: block;
+	padding: 6px 3px 6px 28px;
+	font-size: 1.1em;
+	letter-spacing: 0.15em;
+}
+.subPagesList li a:link, .subPagesList li a:visited {
+	border-bottom: 1px dashed #ccc;
+	text-decoration: none !important;
+}
+.subPagesList li a:hover, .subPagesList li a:active {
+	background-color: #111 !important;
+	color: #fff;
+}
+ul.articlesList {
+	margin: 0 0 10px 0;
+	list-style: none;
+	padding: 0;
+}
+ul.articlesList li {
+	margin: 5px 0;
+	padding: 0;
+}
+ul.articlesList li a {
+	display: block;
+	padding: 6px 3px 6px 10px;
+	width: 350px;
+	font-size: 1em;
+	letter-spacing: 0.15em;
+	margin-left: 20px;
+}
+.articlesList li a:link, .articlesList li a:visited {
+	border-bottom: 1px dashed #ccc;
+	text-decoration: none !important;
+}
+.articlesList li a:hover, .articlesList li a:active {
+	background-color: #111 !important;
+	color: #fff;
+}
+.linksList {
+	width: 420px;
+	
+	margin: 10px auto 0 auto;
+}
+.linksList dt {
+	width: 170px;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.linksList dd {
+	width: 250px;
+	margin: 0 0 5px 170px;
+	padding-bottom: 10px;
+	border-bottom: 1px #333 ridge;
+}
+dl.emphasizeDefinitionTitle {
+}
+dl.emphasizeDefinitionTitle dt {
+	font-weight: bold;
+	margin: 10px 0 5px 0;
+}
+dl.emphasizeDefinitionTitle dd {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+dl.questionAnswerList {
+}
+dl.questionAnswerList dt {
+	margin: 10px 0 5px 0;
+	padding: 0;
+}
+dl.questionAnswerList dd {
+	margin: 3px 0 3px 10px;
+	padding: 0;
+}
+dl.questionAnswerList dd p {
+	margin-left: 0 !important;
+	padding-left: 0 !important;
+}
+/* end list styles */
+
+/* images */
+.floatRightImage {
+	float: right;
+	margin-right: 5px;
+}
+/* end images */
+
+/* specific classes for specific pages */
+.hidden, span.hidden {
+	display: none;
+	border: none;
+}
+.clear {
+	clear: both;
+}
+.ads {
+	width: 120px;
+	margin: 0 auto;
+}
+
+.shows {
+	font-size: 0.90em;
+	list-style: disc;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.shows li {
+	padding: 5px 0px;
+}
+.showpaging {
+	font-size: 0.9em;
+	text-align: center;
+	margin-top: 5px;
+}
+.showpaging li {
+	display: inline;
+	margin: 0 2.5px;
+}
+
+#adminnav {
+	list-style: none;
+	padding: 0;
+	margin: 5px 0;
+}
+#adminnav li {
+	margin: 5px 10px;
+	padding: 0;
+}
+#adminnav a {
+	background-color: inherit;
+	color: #fff;
+	text-decoration: none;
+}
+#adminnav .spacedli {
+	margin-bottom: 15px;
+}
+.loginstatus {
+	text-align: right;
+	font-size: 0.9em;
+}
+.editlinks {
+	margin: 10px 0 25px 30px;
+	list-style: disc;
+}
+.error {
+	background-color: inherit;
+	color: #f00;
+}
+.success {
+	font-weight: bold;
+}
+
+/* ajax tabs */
+#tabcontainer {
+	width: 400px;
+	border: 1px ridge #ccc;
+	margin: 0 25px;
+}
+#tabul {
+	list-style: none;
+	margin: 0 auto;
+}
+.tabs {
+	padding: 0 5px;
+	text-align: center;
+	float: left;
+	cursor: pointer;
+	color: #fff;
+}
+.dividers {
+	text-align: center;
+	float: left;
+	cursor: default;
+	padding: 0 5px;
+}
+#tabcontent {
+	clear: both;
+}
+#load {
+	color: #fff;
+	background-color: inherit;
+	display: none;
+	padding-left: 5px;
+}
+/* end of ajax tabs */
+
+/* forms */
+
+.form {
+	width: 450px;
+	margin: 0 auto;
+	text-align: center;
+}
+.form ul.errorList {
+	text-align: left;
+	color: #c00;
+}
+.form span.error, .form strong.error {
+	display: block;
+	float: left;
+	color: #c00;
+	font-weight: 600;
+	margin: 10px 0 10px 5px;
+}
+.form input.error, .form input.invalid {
+	border: 1px solid #c00;
+	background-color: #fff;
+}
+.form legend {
+	color: #ccc;
+	background-color: inherit;
+	margin: 0 15px;
+	padding: 0 5px;
+}
+.form fieldset {
+	border: 1px ridge #888;
+	padding: 10px;
+	width: 400px;
+	margin: 0 auto;
+	text-align: left;
+}
+.form p {
+	clear: left;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.form label {
+	float: left;
+	margin: 10px 0;
+	display: block;
+	text-align: left;
+	width: 140px;
+}
+.form input, select, textarea {
+	margin: 10px 0;
+	display: block;
+	width: 160px;
+	float: left;
+	margin-bottom: 10px;
+}
+.form .box {
+	width: 40px;
+	margin-left: 130px;
+}
+.form .radio {
+	width: 1em;
+	float: left;
+	margin-left: 140px;
+}
+.form .lastradio {
+	width: 1em;
+	float: left;
+	margin-left: 20px;
+}
+.form .radiolabel {
+	width: 1em;
+	float: left;
+	margin: 10px;
+}
+.form .submit {
+	clear: both;
+	width: 100px;
+	margin: 0 auto;
+	text-align: center;
+}
+.formValues {
+	list-style: none;
+}
+.formValues li {
+	padding: 10px;
+}
+
+.showform input, .showform select, .showform textarea {
+	width: 200px;
+	margin: 10px 0;
+}
+#dayname {
+	width: 100px;
+}
+#month {
+	width: 100px;
+}
+#daynumber {
+	width: 100px;
+}
+#year {
+	width: 100px;
+}
+.showform br {
+	clear: left;
+}
+.showform .box {
+	width: 40px;
+	margin-left: 130px;
+}
+
+.showform .submit {
+	width: 100px;
+	margin-left: 150px;
+	text-align: center;
+}
+/* end of forms */

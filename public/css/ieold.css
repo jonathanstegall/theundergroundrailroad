@@ -1,0 +1,10 @@
+/* CSS Document for IE */
+#navigation {
+	float: left;
+	width: 150px;
+  	margin-left: -160px;
+  	position: relative;
+	font-size: 12px;
+	letter-spacing: 0.1em;
+	text-align: right;
+}
