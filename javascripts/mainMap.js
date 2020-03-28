@@ -30,7 +30,7 @@
         map.addControl(new GLargeMapControl());
         map.addControl(new GMapTypeControl());
         map.setCenter(new GLatLng(39,-50),2);
-        GDownloadUrl("../../makexml.php", function(data) {
+        GDownloadUrl("/map.xml", function(data) {
           var xml = GXml.parse(data); 
           var markers = xml.documentElement.getElementsByTagName("marker");
           for (var i = 0; i < markers.length; i++) {
